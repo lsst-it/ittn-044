@@ -1,6 +1,6 @@
 \documentclass[PMO,authoryear,toc]{lsstdoc}
 % lsstdoc documentation: https://lsst-texmf.lsst.io/lsstdoc.html
-\input{meta}
+%\input{meta}
 
 % Package imports go here.
 
@@ -19,16 +19,18 @@
 Cristian Silva
 }
 
+\date{\today}
+
 \setDocRef{ITTN-044}
 \setDocUpstreamLocation{\url{https://github.com/lsst-it/ittn-044}}
-
-\date{\vcsDate}
+%\setDocDate{2021-04-14}
+%\date{\vcsDate}
 
 % Optional: name of the document's curator
 % \setDocCurator{The Curator of this Document}
 
 \setDocAbstract{%
-Document hub for design and specifications documents. 
+Hub of documentation related with the design and specifications of the long haul network
 }
 
 % Change history defined here.
@@ -36,7 +38,7 @@ Document hub for design and specifications documents.
 % Fields: VERSION, DATE, DESCRIPTION, OWNER NAME.
 % See LPM-51 for version number policy.
 \setDocChangeRecord{%
-  \addtohist{1}{YYYY-MM-DD}{Unreleased.}{Cristian Silva}
+  \addtohist{1}{2021-04-14}{First version, dump from Confluence.}{Cristian Silva}
 }
 
 
@@ -47,8 +49,7 @@ Document hub for design and specifications documents.
 % Frequently for a technote we do not want a title page  uncomment this to remove the title page and changelog.
 % use \mkshorttitle to remove the extra pages
 
-% ADD CONTENT HERE
-% You can also use the \input command to include several content files.
+\input{body.tex}
 
 \appendix
 % Include all the relevant bib files.
