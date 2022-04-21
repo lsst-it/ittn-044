@@ -1,46 +1,32 @@
 
-\section{Documents Links}
+\section{Main Documents}
 
-Data Management System-level network specifications (extracted from \href{https://confluence.lsstcorp.org/download/attachments/20284335/LSE-61.pdf?version=1&modificationDate=1490879770000&api=v2}{LSE-61 Data Management Subsystem Requirements})
+\begin{itemize}
+    \item \href{https://confluence.lsstcorp.org/download/attachments/20284335/LSE-61.pdf?version=1&modificationDate=1490879770000&api=v2}{LSE-61 Data Management Subsystem Requirements} Data Management System-level network specifications 
+    \item \href{https://confluence.lsstcorp.org/display/DM/LSST+Network+Traffic+Types}{LSST Network Traffic Types} A grouping of this traffic for purposes of network design, QoS, prioritization etc.
+    \item \href{https://confluence.lsstcorp.org/display/DM/LSST+Network+Bandwidth+Allocation}{LSST Bandwidth Allocation} A bandwidth allocation by link of this traffic for purposes of network design, QoS, prioritization etc
+    \item  \href{https://docushare.lsstcorp.org/docushare/dsweb/Get/LSE-78/lse78observatoryNetworkDesign_rel5.1_20200825.pdf}{LSE-78 Rubin Observatory Network Design}
+    \item \href{https://docushare.lsstcorp.org/docushare/dsweb/Get/LSE-479/lse479observatoryNetworkTechnicalDoc_rel1_20200825.pdf}{LSE-479 Rubin Observatory Networks Technical Document}.
+    \item  \href{https://confluence.lsstcorp.org/download/attachments/20284335/20170130%20LDM-142%20LSST%20Networks%20BL%20and%20Plan.xls?version=1&modificationDate=1491479508000&api=v2}{LDM-142 Network Sizing Model} The budgeted cost and schedule of deployment of links and bandwidth, and their utilization
+    \item \href{https://docushare.lsstcorp.org/docushare/dsweb/Get/LTS-577/LTS-577%20Summit%20Network%20Specification%20Rel1%2006292017.pdf}{LTS-577 Summit Network Specification} Summit Network Requirements
+\end{itemize}
 
-180 days MTBF/year
+\section{Testing and Verification Documents}
 
-48 hours MTTR/year
+\begin{itemize}
+    \item \href{https://confluence.lsstcorp.org/download/attachments/20284335/LSST%20LHN%20End-to-End_Plan_v6.docx?version=1&modificationDate=1490879785000&api=v2}{LSST Network End-to-End Test Plan} Defines the plan for development 
+    testing and monitoring the LSST networks
+    \item href{https://docushare.lsstcorp.org/docushare/dsweb/Get/LDM-732/NoContent8135677362395171770.txt}{Vera C. Rubin Network Verification Baseline} Defines the plan for formal verification of the LSST Networks
+    \item \href{https://docushare.lsstcorp.org/docushare/dsweb/Get/Document-35934/Rubin%20Observatory%20Networks%20Pre-Verification%20Review%20Report%202020-06-22.pdf}{Rubin Observatory Network Pre-Verification Review Report} Report from the panel from the June 2020 review.
+\end{itemize}
 
-Base to Archive nightly data volume (science images and meta-data): 15TB
+\section{Operations and Management}
 
-Amount of time available to transfer data from Mountain to Base to Archive:
+\href{https://confluence.lsstcorp.org/download/attachments/20284335/LSST%20Network%20O%26M%20Plan_v2.docx?version=1&modificationDate=1490879794000&api=v2}{LSST Network Operations and Management Plan}  Defines the plan for operating and maintaining the LSST networks as a single integrated process.
 
-                 Crosstalk-corrected images for Alert Production: 6 seconds to move (between 2.6 - 12.4 Gbytes depending on compression)
-
-                 Raw images: 24 hours
-
-Note, there is also Observatory Control System and other operational data transferred at night, and there is daytime engineering and calibration traffic potentially at the same volume.  Finally, there is periodic data transfer from the Archive to the Base, primarily as a result of annual Data Release Processing.  All the data flows and allocated bandwidths are defined in the following documents.
-
-A grouping of this traffic for purposes of network design, QoS, prioritization etc. is on the \href{https://confluence.lsstcorp.org/display/DM/LSST+Network+Traffic+Types}{LSST Network Traffic Types}.
-
-A bandwidth allocation by link of this traffic for purposes of network design, QoS, prioritization etc. is on the \href{https://confluence.lsstcorp.org/display/DM/LSST+Network+Bandwidth+Allocation}{LSST Bandwidth Allocation}.
-
-The LSST Long-Haul Networks are specified in \href{https://docushare.lsstcorp.org/docushare/dsweb/Get/LSE-78/lse78observatoryNetworkDesign_rel5.1_20200825.pdf}{LSE-78 Rubin Observatory Network Design} and \href{https://docushare.lsstcorp.org/docushare/dsweb/Get/LSE-479/lse479observatoryNetworkTechnicalDoc_rel1_20200825.pdf}{LSE-479 Rubin Observatory Networks Technical Document}.
-
-The budgeted cost and schedule of deployment of links and bandwidth, and their utilization is documented in \href{https://confluence.lsstcorp.org/download/attachments/20284335/20170130%20LDM-142%20LSST%20Networks%20BL%20and%20Plan.xls?version=1&modificationDate=1491479508000&api=v2}{LDM-142 Network Sizing Model}
-
-The requirements for the Summit Network are in \href{https://docushare.lsstcorp.org/docushare/dsweb/Get/LTS-577/LTS-577%20Summit%20Network%20Specification%20Rel1%2006292017.pdf}{LTS-577 Summit Network Specification}
-
-In addition to the top-level documents above, there are documents describing how the LSST Networks are to be tested, verified, and managed:
-
-The \href{https://confluence.lsstcorp.org/download/attachments/20284335/LSST%20LHN%20End-to-End_Plan_v6.docx?version=1&modificationDate=1490879785000&api=v2}{LSST Network End-to-End Test Plan} defines the plan for development testing and monitoring the LSST networks.
-
-The \href{https://docushare.lsstcorp.org/docushare/dsweb/Get/LDM-732/NoContent8135677362395171770.txt}{Vera C. Rubin Network Verification Baseline} defines the plan for formal verification of the LSST Networks
-
-\href{https://docushare.lsstcorp.org/docushare/dsweb/Get/Document-35934/Rubin%20Observatory%20Networks%20Pre-Verification%20Review%20Report%202020-06-22.pdf}{Rubin Observatory Network Pre-Verification Review Report} is the report from the panel from the June 2020 review.
+\section{Obselete Documents}
 
 The LSST Observatory Network Verification Plan defines plan for formal verification of the LSST networks.  OBSOLETE, SUPERCEDED BY LDM-732 and JIRA LVV Project
 
 The LSST Observatory Network Verification Matrix defines requirements and methods for formal verification of the LSST networks. OBSOLETE, SUPERCEDED BY LDM-732 and JIRA LVV Project
 
-The \href{https://confluence.lsstcorp.org/download/attachments/20284335/LSST%20Network%20O%26M%20Plan_v2.docx?version=1&modificationDate=1490879794000&api=v2}{LSST Network Operations and Management Plan}  defines the plan for operating and maintaining the LSST networks as a single integrated process.
-
-SLAC US Data Facility Networks (\href{https://confluence.lsstcorp.org/download/attachments/20284335/Rubin-SLAC-ESNET-p1.pptx?version=1&modificationDate=1615304516000&api=v2}{ppt}, \href{https://confluence.lsstcorp.org/download/attachments/20284335/Rubin-SLAC-ESNET-p1.pdf?version=1&modificationDate=1615304502000&api=v2}{pdf})
-
-ESnet - Europe Networks (\href{https://confluence.lsstcorp.org/download/attachments/20284335/ESnet-Europe-networks.pdf?version=1&modificationDate=1615479399000&api=v2}{pdf})
